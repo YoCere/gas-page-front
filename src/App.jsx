@@ -10,7 +10,7 @@ import {
   X
 } from "lucide-react";
 
-const BACKEND_URL = "http://gas-page-back-production.up.railway.app:3000"; 
+const BACKEND_URL = "https://gas-page-back-production.up.railway.app";
 // luego cambia por Railway
 
 const App = () => {

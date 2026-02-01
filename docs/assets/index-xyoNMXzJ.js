@@ -10,78 +10,78 @@ Error generating stack: `+e.message+`
 1. Calentar el líquido.
 2. Añadir la avena y cocinar 5-7 minutos.
 3. Añadir el plátano en rodajas.
-4. Espolvorear canela.`,image:"/images/avena.png"},{day:"Lunes",meal:"Almuerzo",title:"Merluza al Vapor",image:"/images/avena.png",recipe:`Ingredientes: 150g de merluza, zanahoria y patata.
+4. Espolvorear canela.`,image:"images/avena.png"},{day:"Lunes",meal:"Almuerzo",title:"Merluza al Vapor",image:"images/avena.png",recipe:`Ingredientes: 150g de merluza, zanahoria y patata.
 1. Cocer verduras al vapor.
 2. Añadir el pescado.
 3. Cocinar 8 minutos.
-4. Aliñar suavemente.`},{day:"Martes",meal:"Desayuno",title:"Tostada con Queso Fresco",image:"/images/avena.png",recipe:`Ingredientes: 2 rebanadas de pan blanco (sin semillas), 60g de queso fresco tipo Burgos.
+4. Aliñar suavemente.`},{day:"Martes",meal:"Desayuno",title:"Tostada con Queso Fresco",image:"images/avena.png",recipe:`Ingredientes: 2 rebanadas de pan blanco (sin semillas), 60g de queso fresco tipo Burgos.
 1. Tostar ligeramente el pan sin que se queme ni endurezca demasiado.
 2. Cortar el queso en láminas de medio centímetro.
-3. Colocar el queso sobre el pan y añadir un toque mínimo de aceite de oliva.`,prompt:"White toast with fresh white cheese slices"},{day:"Martes",meal:"Almuerzo",title:"Pollo con Arroz Blanco",image:"/images/avena.png",recipe:`Ingredientes: 120g de pechuga de pollo, 50g de arroz seco (long grain), 1 taza de agua.
+3. Colocar el queso sobre el pan y añadir un toque mínimo de aceite de oliva.`,prompt:"White toast with fresh white cheese slices"},{day:"Martes",meal:"Almuerzo",title:"Pollo con Arroz Blanco",image:"images/avena.png",recipe:`Ingredientes: 120g de pechuga de pollo, 50g de arroz seco (long grain), 1 taza de agua.
 1. Lavar el arroz bajo el grifo. Cocer en agua hirviendo con sal 18 minutos.
 2. Limpiar la pechuga de grasas. Cocinar a la plancha con apenas aceite.
 3. No dejar que el pollo se tueste demasiado (la costra quemada irrita).
-4. Servir el pollo troceado junto al arroz bien escurrido.`,prompt:"Grilled chicken breast strips with plain white rice"},{day:"Martes",meal:"Cena",title:"Sopa de Fideos y Pollo",image:"/images/avena.png",recipe:`Ingredientes: 30g de fideos cabellín, 400ml de caldo de pollo desgrasado, 1 zanahoria picada.
+4. Servir el pollo troceado junto al arroz bien escurrido.`,prompt:"Grilled chicken breast strips with plain white rice"},{day:"Martes",meal:"Cena",title:"Sopa de Fideos y Pollo",image:"images/avena.png",recipe:`Ingredientes: 30g de fideos cabellín, 400ml de caldo de pollo desgrasado, 1 zanahoria picada.
 1. Calentar el caldo hasta que hierva.
 2. Añadir la zanahoria picada muy pequeña y cocer 5 minutos.
 3. Incorporar los fideos y cocinar 3-4 minutos hasta que estén suaves.
-4. Servir inmediatamente para evitar que la pasta absorba todo el caldo.`,prompt:"Chicken noodle soup with tiny carrot bits"},{day:"Miércoles",meal:"Desayuno",title:"Yogur con Pera",image:"/images/avena.png",recipe:`Ingredientes: 125g de yogur natural desnatado, 1 pera grande madura.
+4. Servir inmediatamente para evitar que la pasta absorba todo el caldo.`,prompt:"Chicken noodle soup with tiny carrot bits"},{day:"Miércoles",meal:"Desayuno",title:"Yogur con Pera",image:"images/avena.png",recipe:`Ingredientes: 125g de yogur natural desnatado, 1 pera grande madura.
 1. Pelar la pera, quitar el corazón y cortarla en dados.
 2. Opcional: Cocinar la pera 2 min al microondas con un poco de agua.
 3. Mezclar la pera con el yogur a temperatura ambiente.
-4. Evitar el azúcar; usar canela si se desea endulzar.`,prompt:"Natural yogurt with pear pieces"},{day:"Miércoles",meal:"Almuerzo",title:"Solomillo de Pavo y Puré",image:"/images/avena.png",recipe:`Ingredientes: 150g de solomillo de pavo, 2 patatas medianas, 20ml de leche desnatada.
+4. Evitar el azúcar; usar canela si se desea endulzar.`,prompt:"Natural yogurt with pear pieces"},{day:"Miércoles",meal:"Almuerzo",title:"Solomillo de Pavo y Puré",image:"images/avena.png",recipe:`Ingredientes: 150g de solomillo de pavo, 2 patatas medianas, 20ml de leche desnatada.
 1. Hervir las patatas 20 minutos.
 2. Chafar con leche.
 3. Cocinar el pavo a la plancha.
-4. Servir tibio.`,prompt:"Turkey tenderloin with mashed potatoes"},{day:"Miércoles",meal:"Cena",title:"Tortilla de Claras",image:"/images/avena.png",recipe:`Ingredientes: 2 claras de huevo, 1 yema, 1 gota de aceite.
+4. Servir tibio.`,prompt:"Turkey tenderloin with mashed potatoes"},{day:"Miércoles",meal:"Cena",title:"Tortilla de Claras",image:"images/avena.png",recipe:`Ingredientes: 2 claras de huevo, 1 yema, 1 gota de aceite.
 1. Batir suavemente.
 2. Calentar sartén.
 3. Cocinar plegando.
-4. Interior bien cuajado.`,prompt:"French omelette on a white plate"},{day:"Jueves",meal:"Desayuno",title:"Papaya y Maíz",image:"/images/avena.png",recipe:`Ingredientes: 200g de papaya madura, 30g de copos de maíz.
+4. Interior bien cuajado.`,prompt:"French omelette on a white plate"},{day:"Jueves",meal:"Desayuno",title:"Papaya y Maíz",image:"images/avena.png",recipe:`Ingredientes: 200g de papaya madura, 30g de copos de maíz.
 1. Pelar la papaya.
 2. Cortar en cubos.
 3. Mezclar.
-4. Consumir al momento.`,prompt:"Fresh papaya chunks with corn flakes"},{day:"Jueves",meal:"Almuerzo",title:"Lenguado al Horno",image:"/images/avena.png",recipe:`Ingredientes: 180g de lenguado, 1 calabacín.
+4. Consumir al momento.`,prompt:"Fresh papaya chunks with corn flakes"},{day:"Jueves",meal:"Almuerzo",title:"Lenguado al Horno",image:"images/avena.png",recipe:`Ingredientes: 180g de lenguado, 1 calabacín.
 1. Precalentar horno.
 2. Cortar calabacín.
 3. Hornear 10-12 minutos.
-4. Servir jugoso.`,prompt:"Baked fish fillets with zucchini"},{day:"Jueves",meal:"Cena",title:"Caldo de Verduras y Arroz",image:"/images/avena.png",recipe:`Ingredientes: 500ml de caldo, 40g de arroz.
+4. Servir jugoso.`,prompt:"Baked fish fillets with zucchini"},{day:"Jueves",meal:"Cena",title:"Caldo de Verduras y Arroz",image:"images/avena.png",recipe:`Ingredientes: 500ml de caldo, 40g de arroz.
 1. Hervir caldo.
 2. Añadir arroz.
 3. Cocinar blando.
-4. Ideal digestivo.`,prompt:"Vegetable broth with rice grains"},{day:"Viernes",meal:"Desayuno",title:"Tortitas de Arroz y Aguacate",image:"/images/avena.png",recipe:`Ingredientes: 2 tortitas de arroz, 30g de aguacate.
+4. Ideal digestivo.`,prompt:"Vegetable broth with rice grains"},{day:"Viernes",meal:"Desayuno",title:"Tortitas de Arroz y Aguacate",image:"images/avena.png",recipe:`Ingredientes: 2 tortitas de arroz, 30g de aguacate.
 1. Chafar aguacate.
 2. Untar.
 3. Sin limón.
-4. Masticar bien.`,prompt:"Rice cakes with spread avocado"},{day:"Viernes",meal:"Almuerzo",title:"Pollo Hervido con Judías",image:"/images/avena.png",recipe:`Ingredientes: pollo, judías, patata.
+4. Masticar bien.`,prompt:"Rice cakes with spread avocado"},{day:"Viernes",meal:"Almuerzo",title:"Pollo Hervido con Judías",image:"images/avena.png",recipe:`Ingredientes: pollo, judías, patata.
 1. Hervir verduras.
 2. Añadir pollo.
 3. Cocer.
-4. Servir sin caldo.`,prompt:"Boiled chicken with green beans and potatoes"},{day:"Viernes",meal:"Cena",title:"Crema de Zanahoria",image:"/images/avena.png",recipe:`Ingredientes: zanahoria, patata, calabacín.
+4. Servir sin caldo.`,prompt:"Boiled chicken with green beans and potatoes"},{day:"Viernes",meal:"Cena",title:"Crema de Zanahoria",image:"images/avena.png",recipe:`Ingredientes: zanahoria, patata, calabacín.
 1. Cocer.
 2. Triturar.
 3. Ajustar textura.
-4. Servir tibio.`,prompt:"Bright orange carrot cream soup"},{day:"Sábado",meal:"Desayuno",title:"Manzana Asada",image:"/images/avena.png",recipe:`Ingredientes: manzanas, canela.
+4. Servir tibio.`,prompt:"Bright orange carrot cream soup"},{day:"Sábado",meal:"Desayuno",title:"Manzana Asada",image:"images/avena.png",recipe:`Ingredientes: manzanas, canela.
 1. Lavar.
 2. Hornear.
 3. Enfriar.
-4. Comer templada.`,prompt:"Two baked apples with a cinnamon stick"},{day:"Sábado",meal:"Almuerzo",title:"Arroz con Calabaza y Pavo",image:"/images/avena.png",recipe:`Ingredientes: arroz, calabaza, pavo.
+4. Comer templada.`,prompt:"Two baked apples with a cinnamon stick"},{day:"Sábado",meal:"Almuerzo",title:"Arroz con Calabaza y Pavo",image:"images/avena.png",recipe:`Ingredientes: arroz, calabaza, pavo.
 1. Rehogar.
 2. Añadir agua.
 3. Cocinar lento.
-4. Meloso.`,prompt:"Creamy pumpkin rice with turkey bits"},{day:"Sábado",meal:"Cena",title:"Sopa de Pescado Suave",image:"/images/avena.png",recipe:`Ingredientes: caldo de pescado, merluza, pan.
+4. Meloso.`,prompt:"Creamy pumpkin rice with turkey bits"},{day:"Sábado",meal:"Cena",title:"Sopa de Pescado Suave",image:"images/avena.png",recipe:`Ingredientes: caldo de pescado, merluza, pan.
 1. Hervir.
 2. Añadir pescado.
 3. Servir con pan.
-4. Muy suave.`,prompt:"Clear fish soup with bread bits"},{day:"Domingo",meal:"Desayuno",title:"Huevo Pasado por Agua",image:"/images/avena.png",recipe:`Ingredientes: huevo, pan.
+4. Muy suave.`,prompt:"Clear fish soup with bread bits"},{day:"Domingo",meal:"Desayuno",title:"Huevo Pasado por Agua",image:"images/avena.png",recipe:`Ingredientes: huevo, pan.
 1. Hervir.
 2. Cocer 4-5 min.
 3. Enfriar.
-4. Comer con pan.`,prompt:"Soft boiled egg in a cup with toast soldiers"},{day:"Domingo",meal:"Almuerzo",title:"Lenguado y Puré de Zanahoria",image:"/images/avena.png",recipe:`Ingredientes: lenguado, zanahoria.
+4. Comer con pan.`,prompt:"Soft boiled egg in a cup with toast soldiers"},{day:"Domingo",meal:"Almuerzo",title:"Lenguado y Puré de Zanahoria",image:"images/avena.png",recipe:`Ingredientes: lenguado, zanahoria.
 1. Hacer puré.
 2. Plancha pescado.
 3. Servir junto.
-4. Ligero.`,prompt:"Grilled fish on carrot puree bed"},{day:"Domingo",meal:"Cena",title:"Puré Mixto Final",image:"/images/avena.png",recipe:`Ingredientes: patata, zanahoria, calabacín, clara.
+4. Ligero.`,prompt:"Grilled fish on carrot puree bed"},{day:"Domingo",meal:"Cena",title:"Puré Mixto Final",image:"images/avena.png",recipe:`Ingredientes: patata, zanahoria, calabacín, clara.
 1. Cocer.
 2. Añadir clara.
 3. Triturar.

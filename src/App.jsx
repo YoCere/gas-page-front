@@ -305,19 +305,25 @@ const App = () => {
   return (
     <div className="fixed inset-0 bg-slate-900 flex flex-col overflow-hidden">
       <header className="bg-emerald-600 px-4 py-3 text-white flex justify-between items-center shadow-md">
-        <div className="flex items-center gap-2">
-          <BookOpen size={18} />
-          <span className="text-xs font-bold uppercase">
-            Pág {currentPage + 1}/{menu.length}
-          </span>
-        </div>
-        <button
-          onClick={() => setIsAssistantOpen(true)}
-          className="bg-white/20 p-1.5 rounded-lg"
-        >
-          <MessageSquare size={18} />
-        </button>
-      </header>
+  <div className="flex items-center gap-2">
+    <BookOpen size={18} />
+    <span className="text-xs font-bold uppercase">
+      Pág {currentPage + 1}/{menu.length}
+    </span>
+  </div>
+  {/* Mostrar el día actual si existe en pageData */}
+  {pageData.day && (
+    <span className="text-sm font-bold capitalize">
+      {pageData.day}
+    </span>
+  )}
+  <button
+    onClick={() => setIsAssistantOpen(true)}
+    className="bg-white/20 p-1.5 rounded-lg"
+  >
+    <MessageSquare size={18} />
+  </button>
+</header>
 
       <main ref={scrollRef} className="flex-1 overflow-y-auto bg-white">
         {pageData.type === "cover" ? (

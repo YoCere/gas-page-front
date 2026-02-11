@@ -89,35 +89,35 @@ Error generating stack: `+t.message+`
 1. Cocer.
 2. Añadir clara.
 3. Triturar.
-4. Servir.`,prompt:"Healthy vegetable mash in a bowl"},{day:"Lunes (Semana 2)",meal:"Desayuno",title:"Crema de Arroz con Compota de Manzana",image:"images/generic.png",recipe:`Ingredientes: 40g de arroz blanco, 300ml de agua, 100g de compota/puré de manzana sin azúcar, 1 pizca de canela (opcional).
+4. Servir.`,prompt:"Healthy vegetable mash in a bowl"},{day:"Lunes (Semana 2)",meal:"Desayuno",title:"Crema de Arroz con Compota de Manzana",image:"images/2lunes1.png",recipe:`Ingredientes: 40g de arroz blanco, 300ml de agua, 100g de compota/puré de manzana sin azúcar, 1 pizca de canela (opcional).
 1. Lavar el arroz y cocerlo en 300ml de agua a fuego bajo 18-20 minutos (debe quedar muy blando).
 2. Triturar el arroz cocido con parte del líquido hasta lograr una crema (añadir un poco de agua si queda muy espeso).
 3. Servir tibio y colocar la compota de manzana encima.
-4. Opcional: espolvorear una pizca de canela; evitar limón o cítricos.`,prompt:"Creamy rice porridge topped with applesauce in a simple bowl, soft lighting"},{day:"Lunes (Semana 2)",meal:"Almuerzo",title:"Tilapia en Papillote con Calabacín y Patata",image:"images/generic.png",recipe:`Ingredientes: 150g de filete de tilapia (u otro pescado blanco), 200g de patata, 120g de calabacín, 5ml (1 cdita) de aceite de oliva, sal mínima.
+4. Opcional: espolvorear una pizca de canela; evitar limón o cítricos.`,prompt:"Creamy rice porridge topped with applesauce in a simple bowl, soft lighting"},{day:"Lunes (Semana 2)",meal:"Almuerzo",title:"Tilapia en Papillote con Calabacín y Patata",image:"images/2lunes2.png",recipe:`Ingredientes: 150g de filete de tilapia (u otro pescado blanco), 200g de patata, 120g de calabacín, 5ml (1 cdita) de aceite de oliva, sal mínima.
 1. Hervir la patata en cubos 10-12 min hasta que esté tierna; escurrir.
 2. Colocar el pescado y el calabacín en láminas sobre papel para horno; añadir 2 cdas de agua y cerrar el papillote.
 3. Hornear a 180°C por 12-15 min (sin dorar en exceso).
-4. Servir tibio con la patata y añadir 1 cdita de aceite al final.`,prompt:"White fish baked in parchment with zucchini, served with boiled potatoes, minimalistic plate"},{day:"Lunes (Semana 2)",meal:"Cena",title:"Crema de Calabacín y Patata",image:"images/generic.png",recipe:`Ingredientes: 250g de calabacín pelado, 150g de patata, 450ml de agua o caldo desgrasado, 5ml (1 cdita) de aceite de oliva.
+4. Servir tibio con la patata y añadir 1 cdita de aceite al final.`,prompt:"White fish baked in parchment with zucchini, served with boiled potatoes, minimalistic plate"},{day:"Lunes (Semana 2)",meal:"Cena",title:"Crema de Calabacín y Patata",image:"images/2lunes3.png",recipe:`Ingredientes: 250g de calabacín pelado, 150g de patata, 450ml de agua o caldo desgrasado, 5ml (1 cdita) de aceite de oliva.
 1. Cortar calabacín y patata en cubos y hervir 18-20 min.
 2. Reservar un poco del líquido de cocción y triturar hasta textura fina.
 3. Ajustar con el líquido reservado si hace falta (debe quedar crema ligera).
-4. Servir tibia y añadir 1 cdita de aceite por encima.`,prompt:"Smooth zucchini and potato cream soup in a white bowl, soft steam"},{day:"Martes (Semana 2)",meal:"Desayuno",title:"Sémola de Trigo con Leche Desnatada",image:"images/generic.png",recipe:`Ingredientes: 35g de sémola de trigo (o farina), 250ml de leche desnatada (o bebida vegetal), 1 pizca de canela (opcional).
+4. Servir tibia y añadir 1 cdita de aceite por encima.`,prompt:"Smooth zucchini and potato cream soup in a white bowl, soft steam"},{day:"Martes (Semana 2)",meal:"Desayuno",title:"Sémola de Trigo con Leche Desnatada",image:"images/2martes1.png",recipe:`Ingredientes: 35g de sémola de trigo (o farina), 250ml de leche desnatada (o bebida vegetal), 1 pizca de canela (opcional).
 1. Calentar la leche a fuego bajo hasta que esté caliente (sin hervir fuerte).
 2. Añadir la sémola en lluvia, removiendo para evitar grumos.
 3. Cocinar 3-4 min hasta que espese, removiendo suave.
-4. Servir tibia; opcional añadir canela (sin cacao ni chocolate).`,prompt:"Warm semolina porridge in a bowl, creamy texture, simple presentation"},{day:"Martes (Semana 2)",meal:"Almuerzo",title:"Pollo al Horno Jugoso con Puré de Camote",image:"images/generic.png",recipe:`Ingredientes: 150g de pechuga de pollo, 250g de camote/batata, 30ml de leche desnatada (opcional), 5ml (1 cdita) de aceite de oliva, sal mínima.
+4. Servir tibia; opcional añadir canela (sin cacao ni chocolate).`,prompt:"Warm semolina porridge in a bowl, creamy texture, simple presentation"},{day:"Martes (Semana 2)",meal:"Almuerzo",title:"Pollo al Horno Jugoso con Puré de Camote",image:"images/2martes2.png",recipe:`Ingredientes: 150g de pechuga de pollo, 250g de camote/batata, 30ml de leche desnatada (opcional), 5ml (1 cdita) de aceite de oliva, sal mínima.
 1. Hervir el camote pelado 18-20 min; chafar con 30ml de leche o con un poco de agua de cocción.
 2. Colocar el pollo en una fuente con 1 cda de agua, tapar con papel aluminio.
 3. Hornear a 180°C por 18-20 min (evitar que se dore o se seque).
-4. Reposar 2 min, cortar en tiras y servir con el puré tibio.`,prompt:"Tender baked chicken breast served with smooth sweet potato mash, neutral tones"},{day:"Martes (Semana 2)",meal:"Cena",title:"Sopa de Arroz con Zanahoria",image:"images/generic.png",recipe:`Ingredientes: 500ml de caldo desgrasado (pollo o verduras), 40g de arroz blanco, 60g de zanahoria, sal mínima.
+4. Reposar 2 min, cortar en tiras y servir con el puré tibio.`,prompt:"Tender baked chicken breast served with smooth sweet potato mash, neutral tones"},{day:"Martes (Semana 2)",meal:"Cena",title:"Sopa de Arroz con Zanahoria",image:"images/2martes3.png",recipe:`Ingredientes: 500ml de caldo desgrasado (pollo o verduras), 40g de arroz blanco, 60g de zanahoria, sal mínima.
 1. Llevar el caldo a ebullición suave.
 2. Añadir la zanahoria en cubitos muy pequeños y cocer 8 min.
 3. Agregar el arroz lavado y cocinar 18-20 min hasta que esté muy blando.
-4. Servir tibia; si queda espesa, ajustar con un poco de agua caliente.`,prompt:"Simple rice and carrot soup, clear broth, comforting bowl"},{day:"Miércoles (Semana 2)",meal:"Desayuno",title:"Pan Blanco con Requesón y Mermelada de Durazno",image:"images/generic.png",recipe:`Ingredientes: 2 rebanadas de pan blanco, 60g de requesón/ricotta (bajo en grasa), 20g de mermelada de durazno sin semillas.
+4. Servir tibia; si queda espesa, ajustar con un poco de agua caliente.`,prompt:"Simple rice and carrot soup, clear broth, comforting bowl"},{day:"Miércoles (Semana 2)",meal:"Desayuno",title:"Pan Blanco con Requesón y Mermelada de Durazno",image:"images/2miercoles1.png",recipe:`Ingredientes: 2 rebanadas de pan blanco, 60g de requesón/ricotta (bajo en grasa), 20g de mermelada de durazno sin semillas.
 1. Tostar el pan muy ligeramente (solo para entibiar).
 2. Untar el requesón en capa fina.
 3. Añadir la mermelada por encima (cantidad moderada).
-4. Consumir despacio; evitar mermeladas ácidas (cítricos).`,prompt:"White bread toast with ricotta and peach jam, minimal styling"},{day:"Miércoles (Semana 2)",meal:"Almuerzo",title:"Bacalao Hervido con Patata",image:"images/generic.png",recipe:`Ingredientes: 160g de bacalao fresco (o pescado blanco), 200g de patata, 5ml (1 cdita) de aceite de oliva, sal mínima.
+4. Consumir despacio; evitar mermeladas ácidas (cítricos).`,prompt:"White bread toast with ricotta and peach jam, minimal styling"},{day:"Miércoles (Semana 2)",meal:"Almuerzo",title:"Bacalao Hervido con Patata",image:"images/2miercoles2.png",recipe:`Ingredientes: 160g de bacalao fresco (o pescado blanco), 200g de patata, 5ml (1 cdita) de aceite de oliva, sal mínima.
 1. Hervir la patata en cubos 12-15 min; escurrir.
 2. En otra olla, calentar agua hasta casi hervir (fuego suave).
 3. Cocer el bacalao 6-8 min (solo hasta que se desmenuce; no sobrecocer).

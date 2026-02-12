@@ -377,15 +377,15 @@ Error generating stack: `+t.message+`
 1. Hervir la calabaza en cubos dentro del caldo 10 minutos.
 2. Añadir el arroz lavado y cocinar 18-20 minutos a fuego bajo.
 3. Incorporar el pescado en trozos y cocinar 6-8 minutos (sin hervor fuerte).
-4. Servir tibia y añadir el aceite al final (sin tomate ni cítricos).`,prompt:"Gentle rice and pumpkin soup with flaky white fish, warm bowl"},{day:"Jueves (Semana 5)",meal:"Desayuno",title:"Batido Suave de Papaya y Yogur",image:"images/generica.png",recipe:`Ingredientes: 200g de papaya madura, 200g de yogur natural (bajo en grasa), 100ml de agua, 10g de avena fina (opcional).
+4. Servir tibia y añadir el aceite al final (sin tomate ni cítricos).`,prompt:"Gentle rice and pumpkin soup with flaky white fish, warm bowl"},{day:"Jueves (Semana 5)",meal:"Desayuno",title:"Batido Suave de Papaya y Yogur",image:"images/5jueves1.png",recipe:`Ingredientes: 200g de papaya madura, 200g de yogur natural (bajo en grasa), 100ml de agua, 10g de avena fina (opcional).
 1. Cortar la papaya en cubos y retirar semillas.
 2. Licuar papaya + yogur + agua (y avena si se usa) hasta textura muy lisa.
 3. Dejar reposar 3-5 minutos para quitar espuma.
-4. Tomar a temperatura ambiente (no muy frío). Nota: usar yogur sin lactosa si se necesita.`,prompt:"Smooth papaya yogurt shake in a glass, soft light, minimal background"},{day:"Jueves (Semana 5)",meal:"Almuerzo",title:"Pescado Blanco al Vapor con Puré de Camote",image:"images/generica.png",recipe:`Ingredientes: 170g de pescado blanco, 260g de camote/batata, 30ml de leche desnatada (opcional) o 30ml de agua de cocción, 5ml (1 cdita) de aceite de oliva, sal mínima.
+4. Tomar a temperatura ambiente (no muy frío). Nota: usar yogur sin lactosa si se necesita.`,prompt:"Smooth papaya yogurt shake in a glass, soft light, minimal background"},{day:"Jueves (Semana 5)",meal:"Almuerzo",title:"Pescado Blanco al Vapor con Puré de Camote",image:"images/5jueves2.png",recipe:`Ingredientes: 170g de pescado blanco, 260g de camote/batata, 30ml de leche desnatada (opcional) o 30ml de agua de cocción, 5ml (1 cdita) de aceite de oliva, sal mínima.
 1. Hervir el camote 18-20 minutos; chafar con leche o agua hasta puré suave.
 2. Cocinar el pescado al vapor 8-10 minutos.
 3. Servir el puré tibio y colocar el pescado encima (desmenuzado si se prefiere).
-4. Añadir el aceite al final y evitar condimentos fuertes.`,prompt:"Steamed white fish served over smooth sweet potato mash, simple plate"},{day:"Jueves (Semana 5)",meal:"Cena",title:"Sopa de Conchitas con Pollo y Zanahoria",image:"images/generica.png",recipe:`Ingredientes: 35g de pasta tipo conchitas, 500ml de caldo desgrasado, 120g de pollo cocido desmechado, 70g de zanahoria, sal mínima.
+4. Añadir el aceite al final y evitar condimentos fuertes.`,prompt:"Steamed white fish served over smooth sweet potato mash, simple plate"},{day:"Jueves (Semana 5)",meal:"Cena",title:"Sopa de Conchitas con Pollo y Zanahoria",image:"images/5jueves3.png",recipe:`Ingredientes: 35g de pasta tipo conchitas, 500ml de caldo desgrasado, 120g de pollo cocido desmechado, 70g de zanahoria, sal mínima.
 1. Hervir la zanahoria en cubitos dentro del caldo 6-8 minutos.
 2. Añadir las conchitas y cocinar 8-10 minutos (muy suaves).
 3. Incorporar el pollo desmechado 1-2 minutos.

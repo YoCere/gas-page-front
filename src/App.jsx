@@ -62,7 +62,7 @@ const App = () => {
   };
 
   // =============================
-  // CARGAR RECETAS DESDE BACKEND
+  // CARGAR RECETAS
   // =============================
 
   useEffect(() => {
@@ -77,6 +77,28 @@ const App = () => {
       .then(data => setMenu(data))
       .catch(() => alert("Error cargando recetas"));
   }, [token]);
+
+  // =============================
+  // PRELOAD NEXT + PREV IMAGES
+  // =============================
+
+  useEffect(() => {
+    if (!menu.length) return;
+
+    const next = currentPage + 1;
+    const prev = currentPage - 1;
+
+    if (menu[next]?.image) {
+      const imgNext = new Image();
+      imgNext.src = menu[next].image;
+    }
+
+    if (menu[prev]?.image) {
+      const imgPrev = new Image();
+      imgPrev.src = menu[prev].image;
+    }
+
+  }, [currentPage, menu]);
 
   // =============================
   // GEMINI PROTEGIDO
@@ -139,7 +161,7 @@ const App = () => {
   }, [currentPage]);
 
   // =============================
-  // PANTALLA LOGIN
+  // LOGIN SCREEN
   // =============================
 
   if (!token) {
@@ -172,7 +194,7 @@ const App = () => {
   if (!pageData) return null;
 
   // =============================
-  // RENDER PRINCIPAL
+  // MAIN RENDER
   // =============================
 
   return (
@@ -244,9 +266,10 @@ const App = () => {
             {pageData.image && (
               <div className="w-full rounded-2xl overflow-hidden shadow-md border border-slate-100">
                 <img
+                  key={pageData.image}
                   src={pageData.image}
                   alt={pageData.title}
-                  className="w-full h-[220px] object-cover"
+                  className="w-full h-[220px] object-cover transition-opacity duration-300"
                 />
               </div>
             )}

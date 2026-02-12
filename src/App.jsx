@@ -915,7 +915,7 @@ const App = () => {
       day: "Jueves (Semana 5)",
       meal: "Desayuno",
       title: "Batido Suave de Papaya y Yogur",
-      image: "images/generica.png",
+      image: "images/5jueves1.png",
       recipe:
         "Ingredientes: 200g de papaya madura, 200g de yogur natural (bajo en grasa), 100ml de agua, 10g de avena fina (opcional).\n1. Cortar la papaya en cubos y retirar semillas.\n2. Licuar papaya + yogur + agua (y avena si se usa) hasta textura muy lisa.\n3. Dejar reposar 3-5 minutos para quitar espuma.\n4. Tomar a temperatura ambiente (no muy frío). Nota: usar yogur sin lactosa si se necesita.",
       prompt: "Smooth papaya yogurt shake in a glass, soft light, minimal background"
@@ -924,7 +924,7 @@ const App = () => {
       day: "Jueves (Semana 5)",
       meal: "Almuerzo",
       title: "Pescado Blanco al Vapor con Puré de Camote",
-      image: "images/generica.png",
+      image: "images/5jueves2.png",
       recipe:
         "Ingredientes: 170g de pescado blanco, 260g de camote/batata, 30ml de leche desnatada (opcional) o 30ml de agua de cocción, 5ml (1 cdita) de aceite de oliva, sal mínima.\n1. Hervir el camote 18-20 minutos; chafar con leche o agua hasta puré suave.\n2. Cocinar el pescado al vapor 8-10 minutos.\n3. Servir el puré tibio y colocar el pescado encima (desmenuzado si se prefiere).\n4. Añadir el aceite al final y evitar condimentos fuertes.",
       prompt: "Steamed white fish served over smooth sweet potato mash, simple plate"
@@ -933,7 +933,7 @@ const App = () => {
       day: "Jueves (Semana 5)",
       meal: "Cena",
       title: "Sopa de Conchitas con Pollo y Zanahoria",
-      image: "images/generica.png",
+      image: "images/5jueves3.png",
       recipe:
         "Ingredientes: 35g de pasta tipo conchitas, 500ml de caldo desgrasado, 120g de pollo cocido desmechado, 70g de zanahoria, sal mínima.\n1. Hervir la zanahoria en cubitos dentro del caldo 6-8 minutos.\n2. Añadir las conchitas y cocinar 8-10 minutos (muy suaves).\n3. Incorporar el pollo desmechado 1-2 minutos.\n4. Servir tibia para mejor tolerancia.",
       prompt: "Small shell pasta soup with shredded chicken and carrots, comforting bowl"

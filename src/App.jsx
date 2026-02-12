@@ -859,7 +859,7 @@ const App = () => {
       day: "Martes (Semana 5)",
       meal: "Desayuno",
       title: "Tostada Tibia con Ricotta y Compota de Pera",
-      image: "images/generica.png",
+      image: "images/5martes1.png",
       recipe:
         "Ingredientes: 2 rebanadas de pan blanco (60g), 120g de ricotta/requesón bajo en grasa, 1 pera madura (170g), 80ml de agua.\n1. Cocinar la pera en cubos con 80ml de agua 10-12 minutos y aplastar hasta compota.\n2. Tostar el pan muy ligeramente (solo para entibiar, sin dorar fuerte).\n3. Untar la ricotta y colocar encima 3-4 cucharadas de compota.\n4. Consumir tibio/temperatura ambiente. Nota: si hay intolerancia a la lactosa, usar ricotta/requesón sin lactosa.",
       prompt: "Warm white toast with ricotta and pear compote, minimal style"
@@ -868,7 +868,7 @@ const App = () => {
       day: "Martes (Semana 5)",
       meal: "Almuerzo",
       title: "Pavo Cocido con Patata y Zanahoria",
-      image: "images/generica.png",
+      image: "images/5martes2.png",
       recipe:
         "Ingredientes: 160g de pechuga de pavo, 220g de patata, 80g de zanahoria, 750ml de agua, 5ml (1 cdita) de aceite de oliva, sal mínima.\n1. Cortar el pavo en cubos medianos y hervir a fuego suave 10 minutos (retirar espuma si aparece).\n2. Añadir la patata en cubos y cocinar 12 minutos.\n3. Agregar la zanahoria en cubitos y cocinar 8-10 minutos más (todo muy tierno).\n4. Servir tibio con poco caldo y añadir el aceite al final (sin salsas).",
       prompt: "Mild boiled turkey with tender potatoes and carrots, simple plating"
@@ -877,7 +877,7 @@ const App = () => {
       day: "Martes (Semana 5)",
       meal: "Cena",
       title: "Sopa de Cabellín con Pavo y Calabacín",
-      image: "images/generica.png",
+      image: "images/5martes3.png",
       recipe:
         "Ingredientes: 30g de fideo cabellín, 500ml de caldo desgrasado, 120g de pavo cocido desmechado, 150g de calabacín pelado, sal mínima.\n1. Hervir el calabacín en cubitos dentro del caldo 8-10 minutos.\n2. Añadir el cabellín y cocinar 3-4 minutos (hasta suave).\n3. Incorporar el pavo desmechado 1-2 minutos para calentar sin resecar.\n4. Servir tibia (evitar pimienta, vinagre y limón).",
       prompt: "Thin noodle soup with zucchini and shredded turkey, comforting bowl"
@@ -887,7 +887,7 @@ const App = () => {
       day: "Miércoles (Semana 5)",
       meal: "Desayuno",
       title: "Yogur con Compota de Durazno",
-      image: "images/generica.png",
+      image: "images/5miercoles1.png",
       recipe:
         "Ingredientes: 200g de yogur natural (bajo en grasa), 1 durazno/melocotón maduro (180g), 60ml de agua.\n1. Pelar el durazno, retirar hueso y cortar en cubos.\n2. Cocinar con 60ml de agua 6-8 minutos hasta ablandar; aplastar para compota.\n3. Dejar entibiar la compota 5 minutos.\n4. Servir el yogur a temperatura ambiente con la compota encima. Nota: usar yogur sin lactosa si se necesita.",
       prompt: "Natural yogurt topped with warm peach compote in a small bowl"
@@ -896,7 +896,7 @@ const App = () => {
       day: "Miércoles (Semana 5)",
       meal: "Almuerzo",
       title: "Papillote de Pavo con Calabaza y Patata",
-      image: "images/generica.png",
+      image: "images/5miercoles2.png",
       recipe:
         "Ingredientes: 170g de pechuga de pavo, 200g de calabaza, 200g de patata, 30ml de agua, 5ml (1 cdita) de aceite de oliva, sal mínima.\n1. Hervir la patata en cubos 10-12 minutos y escurrir.\n2. Colocar pavo + calabaza en láminas en papel para horno, añadir 30ml de agua y cerrar el papillote.\n3. Hornear a 180°C por 15-18 minutos (sin dorar en exceso).\n4. Servir tibio con la patata y añadir el aceite al final.",
       prompt: "Turkey breast baked in parchment with pumpkin, served with tender potatoes"
@@ -905,7 +905,7 @@ const App = () => {
       day: "Miércoles (Semana 5)",
       meal: "Cena",
       title: "Sopa de Arroz con Calabaza y Pescado",
-      image: "images/generica.png",
+      image: "images/5miercoles3.png",
       recipe:
         "Ingredientes: 40g de arroz blanco, 200g de calabaza, 130g de pescado blanco, 650ml de caldo desgrasado, 5ml (1 cdita) de aceite de oliva, sal mínima.\n1. Hervir la calabaza en cubos dentro del caldo 10 minutos.\n2. Añadir el arroz lavado y cocinar 18-20 minutos a fuego bajo.\n3. Incorporar el pescado en trozos y cocinar 6-8 minutos (sin hervor fuerte).\n4. Servir tibia y añadir el aceite al final (sin tomate ni cítricos).",
       prompt: "Gentle rice and pumpkin soup with flaky white fish, warm bowl"
@@ -943,7 +943,7 @@ const App = () => {
       day: "Viernes (Semana 5)",
       meal: "Desayuno",
       title: "Yogur Natural con Banano y Avena",
-      image: "images/generica.png",
+      image: "images/5viernes1.png",
       recipe:
         "Ingredientes: 200g de yogur natural (bajo en grasa), 1/2 banano/plátano maduro (70g), 30g de copos de avena.\n1. Dejar el yogur 10 minutos a temperatura ambiente.\n2. Cortar el banano en rodajas finas.\n3. Mezclar yogur + avena y dejar 2 minutos para que se ablande.\n4. Añadir el banano y consumir (sin cacao ni cítricos). Nota: usar yogur sin lactosa si se necesita.",
       prompt: "Yogurt bowl with banana slices and oats, soft natural lighting"
@@ -952,7 +952,7 @@ const App = () => {
       day: "Viernes (Semana 5)",
       meal: "Almuerzo",
       title: "Filete de Pescado a la Plancha Suave con Puré de Chayote",
-      image: "images/generica.png",
+      image: "images/5viernes2.png",
       recipe:
         "Ingredientes: 170g de pescado blanco, 320g de chayote pelado, 5ml (1 cdita) de aceite de oliva, 450ml de agua, sal mínima.\n1. Hervir el chayote en cubos 18-20 minutos y triturar hasta puré fino.\n2. Calentar sartén antiadherente y cocinar el pescado a fuego medio-bajo 3-4 minutos por lado (sin dorar fuerte).\n3. Servir el puré tibio y colocar el pescado encima.\n4. Añadir el aceite al final (sin ajo/cebolla ni pimienta).",
       prompt: "Soft grilled white fish with smooth chayote puree, minimalist plate"
@@ -961,7 +961,7 @@ const App = () => {
       day: "Viernes (Semana 5)",
       meal: "Cena",
       title: "Crema Mixta de Calabaza y Calabacín con Pollo",
-      image: "images/generica.png",
+      image: "images/5viernes3.png",
       recipe:
         "Ingredientes: 200g de calabaza, 200g de calabacín pelado, 100g de patata, 120g de pollo cocido, 550ml de agua o caldo desgrasado, 5ml (1 cdita) de aceite de oliva, sal mínima.\n1. Hervir calabaza + calabacín + patata 18-20 minutos.\n2. Añadir el pollo cocido en trozos.\n3. Triturar todo hasta crema lisa y ajustar con líquido si hace falta.\n4. Servir tibia y añadir el aceite al final.",
       prompt: "Smooth pumpkin-zucchini cream soup with chicken, warm bowl, gentle steam"
@@ -971,7 +971,7 @@ const App = () => {
       day: "Sábado (Semana 5)",
       meal: "Desayuno",
       title: "Panqueques Suaves de Harina Blanca",
-      image: "images/generica.png",
+      image: "images/5sabado1.png",
       recipe:
         "Ingredientes: 60g de harina de trigo blanca, 1 huevo (60g), 150ml de leche desnatada (o sin lactosa), 5ml (1 cdita) de aceite de oliva.\n1. Batir harina + huevo + leche hasta mezcla lisa (sin grumos).\n2. Calentar sartén antiadherente a fuego bajo y engrasar con el aceite.\n3. Cocinar panqueques 1-2 minutos por lado (solo dorado leve, sin tostado).\n4. Servir tibios, sin miel en exceso y sin frutas ácidas. Nota: usar leche sin lactosa si se necesita.",
       prompt: "Soft plain pancakes on a plate, lightly golden, minimal styling"
@@ -980,7 +980,7 @@ const App = () => {
       day: "Sábado (Semana 5)",
       meal: "Almuerzo",
       title: "Pasta Corta con Pollo y Zanahoria",
-      image: "images/generica.png",
+      image: "images/5sabado2.png",
       recipe:
         "Ingredientes: 70g de pasta blanca corta (seca), 150g de pollo sin piel, 80g de zanahoria, 5ml (1 cdita) de aceite de oliva, sal mínima.\n1. Cocer la zanahoria en cubitos 8-10 minutos y escurrir.\n2. Cocer la pasta 8-10 minutos (muy suave) y escurrir.\n3. Cocinar el pollo a la plancha suave 3-4 minutos por lado (sin costra) y cortar en tiras.\n4. Mezclar pasta + zanahoria + pollo, añadir el aceite al final y servir tibio (sin salsa de tomate).",
       prompt: "Plain short pasta with tender chicken strips and soft carrots, simple bowl"
@@ -989,7 +989,7 @@ const App = () => {
       day: "Sábado (Semana 5)",
       meal: "Cena",
       title: "Puré de Camote con Queso Fresco",
-      image: "images/generica.png",
+      image: "images/5sabado3.png",
       recipe:
         "Ingredientes: 260g de camote/batata, 120g de queso fresco tipo Burgos, 30ml de agua de cocción (si hace falta), 5ml (1 cdita) de aceite de oliva.\n1. Hervir el camote 18-20 minutos y chafar hasta puré (ajustar con 30ml de agua de cocción si se necesita).\n2. Cortar el queso fresco en cubitos.\n3. Mezclar el queso con el puré tibio para que se ablande.\n4. Añadir el aceite al final y servir tibio. Nota: si no toleras lácteos, sustituir el queso por 1 huevo cocido picado (60g).",
       prompt: "Sweet potato mash with soft fresh cheese cubes, warm bowl"
@@ -999,7 +999,7 @@ const App = () => {
       day: "Domingo (Semana 5)",
       meal: "Desayuno",
       title: "Pudín de Tapioca con Leche",
-      image: "images/generica.png",
+      image: "images/5domingo1.png",
       recipe:
         "Ingredientes: 30g de perlas de tapioca, 250ml de leche desnatada (o sin lactosa), 150ml de agua, 1 huevo (60g), 1 pizca de vainilla (opcional).\n1. Cocer la tapioca en agua 12-15 minutos a fuego bajo hasta que esté translúcida.\n2. Añadir la leche y cocinar 5 minutos removiendo suave.\n3. Batir el huevo aparte y añadirlo en hilo, removiendo 1 minuto hasta espesar (sin hervir fuerte).\n4. Servir tibio/templado. Nota: usar leche sin lactosa si se necesita.",
       prompt: "Warm tapioca pudding in a small bowl, smooth and comforting"
@@ -1008,7 +1008,7 @@ const App = () => {
       day: "Domingo (Semana 5)",
       meal: "Almuerzo",
       title: "Arroz Caldoso de Merluza y Calabacín",
-      image: "images/generica.png",
+      image: "images/5domingo2.png",
       recipe:
         "Ingredientes: 60g de arroz blanco, 160g de merluza, 150g de calabacín pelado, 800ml de caldo desgrasado, 5ml (1 cdita) de aceite de oliva, sal mínima.\n1. Hervir el arroz en el caldo 15 minutos a fuego bajo.\n2. Añadir el calabacín en cubitos y cocinar 8 minutos.\n3. Incorporar la merluza en trozos y cocinar 6-7 minutos a hervor suave.\n4. Servir tibio y añadir el aceite al final (sin picantes ni cítricos).",
       prompt: "Soupy rice with zucchini and flaky hake, warm comforting bowl"
@@ -1017,7 +1017,7 @@ const App = () => {
       day: "Domingo (Semana 5)",
       meal: "Cena",
       title: "Crema de Chayote y Calabaza con Huevo",
-      image: "images/generica.png",
+      image: "images/5domingo3.png",
       recipe:
         "Ingredientes: 200g de chayote pelado, 200g de calabaza, 100g de patata, 500ml de agua o caldo desgrasado, 1 huevo (60g), 5ml (1 cdita) de aceite de oliva, sal mínima.\n1. Hervir chayote + calabaza + patata 18-20 minutos hasta muy tiernos.\n2. Triturar hasta crema fina y volver a fuego bajo.\n3. Añadir el huevo batido en hilo, removiendo 1-2 minutos hasta cuajar suave.\n4. Servir tibia y añadir el aceite al final.",
       prompt: "Smooth chayote and pumpkin cream soup with soft egg ribbons, warm bowl"

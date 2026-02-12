@@ -303,7 +303,45 @@ const App = () => {
         )}
 
       </main>
+      {isAssistantOpen && (
+  <div className="fixed inset-0 bg-black/60 flex items-end z-50">
+    <div className="bg-white w-full rounded-t-3xl p-6 space-y-4 max-h-[80vh] overflow-y-auto">
 
+      <div className="flex justify-between items-center">
+        <h3 className="font-black text-lg">Consultor IA</h3>
+        <button onClick={() => setIsAssistantOpen(false)}>
+          <X />
+        </button>
+      </div>
+
+      <div className="flex gap-2">
+        <input
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          className="flex-1 border rounded-xl p-3"
+          placeholder="¿Puedo comer…?"
+        />
+        <button
+          onClick={askGemini}
+          className="bg-emerald-600 text-white px-4 rounded-xl"
+        >
+          →
+        </button>
+      </div>
+
+      {loadingAi && (
+        <div className="text-sm text-gray-500">Consultando...</div>
+      )}
+
+      {chatResponse && (
+        <div className="bg-emerald-50 p-4 rounded-xl">
+          {chatResponse}
+        </div>
+      )}
+
+    </div>
+  </div>
+)}
       {/* FOOTER */}
       <footer className="bg-white border-t p-4 flex justify-between">
         <button

@@ -59,7 +59,7 @@ const AdminApp = ({ token, logout }) => {
           value={newEmail}
           onChange={(e) => setNewEmail(e.target.value)}
           placeholder="Nuevo usuario"
-          className="p-2 rounded text-grey flex-1"
+          className="p-2 rounded text-black flex-1"
         />
         <button
           onClick={addUser}
@@ -73,7 +73,7 @@ const AdminApp = ({ token, logout }) => {
         {users.map((u) => (
           <div
             key={u.id}
-            className="bg-blue text-black p-3 rounded flex justify-between"
+            className="bg-blue text-white p-3 rounded flex justify-between"
           >
             <div>
               {u.email} — {u.active ? "Activo" : "Inactivo"}
@@ -81,7 +81,7 @@ const AdminApp = ({ token, logout }) => {
 
             <button
               onClick={() => toggleUser(u.id)}
-              className="bg-slate-800 text-black px-3 rounded"
+              className="bg-slate-800 text-white px-3 rounded"
             >
               {u.active ? "Desactivar" : "Activar"}
             </button>

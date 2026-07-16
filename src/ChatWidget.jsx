@@ -3,7 +3,7 @@ import { MessageCircle, X, Send } from "lucide-react";
 
 const BACKEND_URL = "http://vu084k0p7fh3tio5mdo9dljr.161.97.77.75.sslip.io";
 
-const ChatWidget = ({ token }) => {
+const ChatWidget = ({ token, currentRecipe }) => {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState([
     { role: "assistant", content: "¡Hola! Soy tu asistente de gastritis. Pregúntame sobre recetas, ingredientes o consejos de alimentación 🍽️" }
@@ -34,7 +34,13 @@ const ChatWidget = ({ token }) => {
           Authorization: `Bearer ${token}`
         },
         body: JSON.stringify({
-          messages: updated.map(m => ({ role: m.role, content: m.content }))
+          messages: updated.map(m => ({ role: m.role, content: m.content })),
+          currentRecipe: currentRecipe?.recipe ? {
+            day: currentRecipe.day,
+            meal: currentRecipe.meal,
+            title: currentRecipe.title,
+            recipe: currentRecipe.recipe
+          } : null
         })
       });
 

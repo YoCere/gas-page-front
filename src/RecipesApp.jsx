@@ -129,7 +129,7 @@ const RecipesApp = ({ token, logout }) => {
       </main>
 
       {/* CHAT */}
-      <ChatWidget token={token} />
+      <ChatWidget token={token} currentRecipe={pageData} />
 
       {/* FOOTER */}
       <footer className="bg-white border-t p-4 flex justify-between">

@@ -12,11 +12,14 @@ import ChatWidget from "./ChatWidget";
 
 const BACKEND_URL = "https://api-gas.duckdns.org";
 
+const toWebP = (path) => path?.replace(/\.png$/i, '.webp');
+
 const RecipesApp = ({ token, logout }) => {
   const [menu, setMenu] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
   const [aiAnalysis, setAiAnalysis] = useState("");
   const [loadingAi, setLoadingAi] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   const scrollRef = useRef(null);
 
@@ -33,8 +36,20 @@ const RecipesApp = ({ token, logout }) => {
 
   useEffect(() => {
     setAiAnalysis("");
+    setImageLoaded(false);
     if (scrollRef.current) scrollRef.current.scrollTop = 0;
   }, [currentPage]);
+
+  // Preload next 2 pages' images
+  useEffect(() => {
+    for (let i = 1; i <= 2; i++) {
+      const next = menu[currentPage + i];
+      if (next?.image) {
+        const img = new Image();
+        img.src = toWebP(next.image);
+      }
+    }
+  }, [currentPage, menu]);
 
   if (!menu.length) {
     return (
@@ -109,11 +124,18 @@ const RecipesApp = ({ token, logout }) => {
             </div>
 
             {pageData.image && (
-              <div className="w-full rounded-2xl overflow-hidden shadow-md border border-slate-100">
+              <div className="w-full rounded-2xl overflow-hidden shadow-md border border-slate-100 relative">
+                {!imageLoaded && (
+                  <div className="w-full h-[220px] bg-slate-200 animate-pulse" />
+                )}
                 <img
-                  src={pageData.image}
+                  src={toWebP(pageData.image)}
                   alt={pageData.title}
-                  className="w-full h-[220px] object-cover"
+                  className={`w-full h-[220px] object-cover transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                  width={400}
+                  height={220}
+                  fetchPriority="high"
+                  onLoad={() => setImageLoaded(true)}
                 />
               </div>
             )}

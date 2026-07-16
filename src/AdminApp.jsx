@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { LogOut } from "lucide-react";
 
-const BACKEND_URL = "http://vu084k0p7fh3tio5mdo9dljr.161.97.77.75.sslip.io";
+const BACKEND_URL = "https://api-gas.duckdns.org";
 
 const AdminApp = ({ token, logout }) => {
   const [users, setUsers] = useState([]);

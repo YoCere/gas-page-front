@@ -3,7 +3,6 @@ import {
   ChevronLeft,
   ChevronRight,
   AlertTriangle,
-  Utensils,
   BookOpen,
   Sparkles,
   LogOut
@@ -84,7 +83,7 @@ const RecipesApp = ({ token, logout }) => {
 
         {pageData.type === "cover" ? (
           <div className="h-full flex flex-col items-center justify-center p-8 text-center space-y-6">
-            <Utensils size={64} className="text-emerald-500" />
+            <img src="/images/logo.webp" alt="Logo" className="w-32 h-32 object-contain" />
             <h1 className="text-4xl font-black">{pageData.title}</h1>
             <p className="text-emerald-600 font-bold">{pageData.subtitle}</p>
             <p className="text-slate-400">{pageData.description}</p>

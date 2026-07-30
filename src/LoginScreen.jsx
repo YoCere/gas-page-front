@@ -41,6 +41,7 @@ const LoginScreen = ({ setToken }) => {
   return (
     <div className="h-screen flex items-center justify-center bg-slate-900">
       <div className="bg-white p-6 rounded-xl space-y-4 w-80">
+        <img src="/images/logo.webp" alt="Logo" className="w-24 h-24 object-contain mx-auto" />
         <h2 className="font-bold text-lg text-center">Acceso privado</h2>
 
         <input

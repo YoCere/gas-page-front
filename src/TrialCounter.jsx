@@ -4,13 +4,17 @@ const MAX_DAYS = 7;
 
 // value: número de 1 a 7, o null para ilimitado.
 const TrialCounter = ({ value, onChange }) => {
+  const atUnlimited = value == null;   // cubre null y un undefined accidental
+  const atMin = value === 1;
+
   const down = () => {
-    if (value === null) return onChange(MAX_DAYS);
-    onChange(Math.max(1, value - 1));
+    if (atUnlimited) return onChange(MAX_DAYS);
+    if (atMin) return;
+    onChange(value - 1);
   };
 
   const up = () => {
-    if (value === null) return;          // ya es ilimitado, no hay nada arriba
+    if (atUnlimited) return;
     if (value >= MAX_DAYS) return onChange(null);
     onChange(value + 1);
   };
@@ -20,20 +24,22 @@ const TrialCounter = ({ value, onChange }) => {
       <button
         type="button"
         onClick={down}
-        className="px-2 text-lg leading-none"
+        disabled={atMin}
+        className="px-2 text-lg leading-none disabled:opacity-30 disabled:cursor-not-allowed"
         aria-label="Menos días"
       >
         −
       </button>
 
       <span className="w-24 text-center text-sm">
-        {value === null ? "-- ilimitado" : `${value} días`}
+        {atUnlimited ? "-- ilimitado" : `${value} días`}
       </span>
 
       <button
         type="button"
         onClick={up}
-        className="px-2 text-lg leading-none"
+        disabled={atUnlimited}
+        className="px-2 text-lg leading-none disabled:opacity-30 disabled:cursor-not-allowed"
         aria-label="Más días"
       >
         +

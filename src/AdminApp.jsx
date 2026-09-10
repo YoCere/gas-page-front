@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { LogOut } from "lucide-react";
 import { BACKEND_URL } from "./config";
 import TrialCounter from "./TrialCounter";
@@ -17,51 +17,93 @@ const AdminApp = ({ token, logout }) => {
   const [newTrialDays, setNewTrialDays] = useState(7);
   const [whatsapp, setWhatsapp] = useState("");
   const [whatsappSaved, setWhatsappSaved] = useState(false);
+  const [adding, setAdding] = useState(false);
+  const trialTimers = useRef({});
 
   const auth = { Authorization: `Bearer ${token}` };
   const jsonAuth = { "Content-Type": "application/json", ...auth };
 
+  // Un admin desactivado recibe 403. Su sesión ya no sirve: fuera.
+  const bailIfRejected = (res) => {
+    if (res.status === 403) {
+      logout();
+      return true;
+    }
+    return false;
+  };
+
   const loadUsers = async () => {
     const res = await fetch(`${BACKEND_URL}/admin/users`, { headers: auth });
+    if (bailIfRejected(res)) return;
     const data = await res.json();
     if (Array.isArray(data)) setUsers(data);
   };
 
   const loadWhatsapp = async () => {
     const res = await fetch(`${BACKEND_URL}/public-config`);
+    if (bailIfRejected(res)) return;
     const data = await res.json();
     setWhatsapp(data.whatsapp ?? "");
   };
 
   const addUser = async () => {
-    if (!newEmail.trim()) return;
+    if (!newEmail.trim() || adding) return;
 
-    await fetch(`${BACKEND_URL}/admin/add-user`, {
-      method: "POST",
-      headers: jsonAuth,
-      body: JSON.stringify({ email: newEmail.trim(), trialDays: newTrialDays })
-    });
+    setAdding(true);
+    try {
+      const res = await fetch(`${BACKEND_URL}/admin/add-user`, {
+        method: "POST",
+        headers: jsonAuth,
+        body: JSON.stringify({ email: newEmail.trim(), trialDays: newTrialDays })
+      });
 
-    setNewEmail("");
-    setNewTrialDays(7);
-    loadUsers();
+      if (bailIfRejected(res)) return;
+
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        alert(data.error || "No se pudo agregar el usuario");
+        return;
+      }
+
+      setNewEmail("");
+      setNewTrialDays(7);
+      loadUsers();
+    } finally {
+      setAdding(false);
+    }
   };
 
-  const updateTrial = async (id, trialDays) => {
-    await fetch(`${BACKEND_URL}/admin/user/${id}/trial`, {
-      method: "PUT",
-      headers: jsonAuth,
-      body: JSON.stringify({ trialDays })
-    });
+  const updateTrial = (id, trialDays) => {
+    // Pinta el cambio de inmediato y manda una sola petición al final de la ráfaga.
+    setUsers((prev) => prev.map((u) => (u.id === id ? { ...u, trialDays } : u)));
 
-    loadUsers();
+    clearTimeout(trialTimers.current[id]);
+    trialTimers.current[id] = setTimeout(async () => {
+      const res = await fetch(`${BACKEND_URL}/admin/user/${id}/trial`, {
+        method: "PUT",
+        headers: jsonAuth,
+        body: JSON.stringify({ trialDays })
+      });
+
+      if (bailIfRejected(res)) return;
+
+      loadUsers();
+    }, 400);
   };
 
   const toggleUser = async (id) => {
-    await fetch(`${BACKEND_URL}/admin/toggle-user/${id}`, {
+    const res = await fetch(`${BACKEND_URL}/admin/toggle-user/${id}`, {
       method: "PUT",
       headers: auth
     });
+
+    if (bailIfRejected(res)) return;
+
+    if (!res.ok) {
+      const data = await res.json().catch(() => ({}));
+      alert(data.error || "No se pudo cambiar el estado");
+      return;
+    }
 
     loadUsers();
   };
@@ -72,6 +114,8 @@ const AdminApp = ({ token, logout }) => {
       headers: jsonAuth,
       body: JSON.stringify({ whatsapp: whatsapp.trim() })
     });
+
+    if (bailIfRejected(res)) return;
 
     if (res.ok) {
       setWhatsappSaved(true);
@@ -104,7 +148,7 @@ const AdminApp = ({ token, logout }) => {
 
         <TrialCounter value={newTrialDays} onChange={setNewTrialDays} />
 
-        <button onClick={addUser} className="bg-emerald-600 px-4 py-2 rounded">
+        <button onClick={addUser} disabled={adding} className="bg-emerald-600 px-4 py-2 rounded">
           Agregar
         </button>
       </div>
@@ -117,6 +161,7 @@ const AdminApp = ({ token, logout }) => {
           value={whatsapp}
           onChange={(e) => setWhatsapp(e.target.value.replace(/\D/g, ""))}
           placeholder="59171234567"
+          maxLength={15}
           className="p-2 rounded text-black w-48"
         />
 

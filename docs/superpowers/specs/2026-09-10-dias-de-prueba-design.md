@@ -257,3 +257,36 @@ simplemente el panel todavía no deja elegir días.
 - **Avisos por correo** de que la prueba está por vencer. No hay servicio de envío
   configurado.
 - **Reorganizar el `index.js` del backend.** Necesario algún día, innecesario para esto.
+
+## Cambios surgidos durante la implementación
+
+Seis decisiones que no estaban en el diseño original y que ahora forman parte del sistema.
+Todas salieron de revisiones de código, no de un cambio de requisitos.
+
+**La regla de acceso falla cerrada.** Si `first_login_at` tuviera un valor que no se puede
+interpretar como fecha, el cálculo daba un número indefinido y el usuario entraba. Un
+control de acceso nunca debe fallar hacia el lado abierto, así que ese caso ahora bloquea.
+
+**Los administradores sí se bloquean por desactivación.** El diseño decía que los
+administradores nunca vencen, y eso sigue siendo cierto para la prueba. Pero antes el
+control de rol leía únicamente el token, así que un administrador desactivado conservaba
+el panel completo durante las dos horas de vida del token. Las tres rutas de
+administración ahora consultan la base igual que las de usuario.
+
+**Un administrador no puede desactivarse a sí mismo.** Consecuencia directa del punto
+anterior: sin ese seguro, quien se desactivara perdía el panel y no tenía forma de
+deshacerlo salvo entrando a la base a mano.
+
+**Dos códigos de rechazo, no uno.** Una cuenta desactivada devuelve `ACCOUNT_DISABLED` y
+una prueba vencida devuelve `TRIAL_EXPIRED`. El frontend distingue por el código de estado
+HTTP y no por el código propio, así que ambos llevan a la misma pantalla. Existen para que
+los registros y los datos no llamen "prueba vencida" a lo que no lo es.
+
+**Índice sobre el correo en minúsculas.** La comprobación de acceso pasó a ser la consulta
+más frecuente de todo el sistema, y compara el correo en minúsculas, lo que impide usar un
+índice normal. La migración crea el índice apropiado.
+
+**El contador del panel espera antes de guardar.** Cada clic disparaba una petición y una
+recarga de la lista. Bajar de 7 a 1 mandaba seis, y las respuestas podían llegar
+desordenadas y dejar la fila mostrando un valor que el administrador no eligió. Ahora el
+cambio se pinta al instante y se guarda una sola vez al terminar la ráfaga.

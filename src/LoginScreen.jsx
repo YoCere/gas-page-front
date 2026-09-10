@@ -1,8 +1,7 @@
 import React, { useState } from "react";
+import { BACKEND_URL } from "./config";
 
-const BACKEND_URL = "https://api-gas.duckdns.org";
-
-const LoginScreen = ({ setToken }) => {
+const LoginScreen = ({ setToken, onExpired }) => {
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -19,6 +18,11 @@ const LoginScreen = ({ setToken }) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: email.trim() })
       });
+
+      if (res.status === 403) {
+        onExpired();
+        return;
+      }
 
       if (res.status === 401) {
         setError("Correo no autorizado");

@@ -8,8 +8,7 @@ import {
   LogOut
 } from "lucide-react";
 import ChatWidget from "./ChatWidget";
-
-const BACKEND_URL = "https://api-gas.duckdns.org";
+import { BACKEND_URL } from "./config";
 
 const toWebP = (path) => path?.replace(/\.png$/i, '.webp');
 

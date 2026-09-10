@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-
-const BACKEND_URL = "https://api-gas.duckdns.org";
+import { BACKEND_URL } from "./config";
 
 const LoginScreen = ({ setToken }) => {
   const [email, setEmail] = useState("");

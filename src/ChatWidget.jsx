@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { MessageCircle, X, Send } from "lucide-react";
-
-const BACKEND_URL = "https://api-gas.duckdns.org";
+import { BACKEND_URL } from "./config";
 
 const ChatWidget = ({ token, currentRecipe }) => {
   const [open, setOpen] = useState(false);

@@ -12,7 +12,7 @@ import { BACKEND_URL } from "./config";
 
 const toWebP = (path) => path?.replace(/\.png$/i, '.webp');
 
-const RecipesApp = ({ token, logout }) => {
+const RecipesApp = ({ token, logout, onExpired }) => {
   const [menu, setMenu] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
   const [aiAnalysis, setAiAnalysis] = useState("");
@@ -25,7 +25,13 @@ const RecipesApp = ({ token, logout }) => {
     fetch(`${BACKEND_URL}/recipes`, {
       headers: { Authorization: `Bearer ${token}` }
     })
-      .then(res => res.json())
+      .then(res => {
+        if (res.status === 403) {
+          onExpired();
+          return null;
+        }
+        return res.json();
+      })
       .then(data => {
         if (Array.isArray(data)) setMenu(data);
       })
@@ -149,7 +155,7 @@ const RecipesApp = ({ token, logout }) => {
       </main>
 
       {/* CHAT */}
-      <ChatWidget token={token} currentRecipe={pageData} />
+      <ChatWidget token={token} currentRecipe={pageData} onExpired={onExpired} />
 
       {/* FOOTER */}
       <footer className="bg-white border-t p-4 flex justify-between">

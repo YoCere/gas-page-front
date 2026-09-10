@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { MessageCircle, X, Send } from "lucide-react";
 import { BACKEND_URL } from "./config";
 
-const ChatWidget = ({ token, currentRecipe }) => {
+const ChatWidget = ({ token, currentRecipe, onExpired }) => {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState([
     { role: "assistant", content: "¡Hola! Soy tu asistente de gastritis. Pregúntame sobre recetas, ingredientes o consejos de alimentación 🍽️" }
@@ -42,6 +42,11 @@ const ChatWidget = ({ token, currentRecipe }) => {
           } : null
         })
       });
+
+      if (res.status === 403) {
+        onExpired();
+        return;
+      }
 
       const data = await res.json();
       setMessages(prev => [...prev, { role: "assistant", content: data.text || "Sin respuesta" }]);
